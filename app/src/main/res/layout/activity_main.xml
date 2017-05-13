@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.android.project1.MainActivity">
+
+    <ImageView
+        android:id="@+id/veggies"
+        android:src="@drawable/veggies3"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/separator1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/veggies">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="3dp"
+            android:background="@drawable/gradientleft"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="3dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="3dp"
+            android:background="@drawable/gradientright"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo23"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/veggies"/>
+
+    <ImageView
+        android:id="@+id/title"
+        android:src="@drawable/titlenslogan1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo" />
+
+    <LinearLayout
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="3dp"
+            android:background="@drawable/gradientleft"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="3dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="3dp"
+            android:background="@drawable/gradientright"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text1"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/separator2"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text2"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text1"/>
+
+    <LinearLayout
+        android:id="@+id/separator3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="3dp"
+            android:background="@drawable/gradientright"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="3dp"
+            android:background="#33691E"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="3dp"
+            android:background="@drawable/gradientleft"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/phone_white_18x18"
+        android:drawableStart="@drawable/phone_white_18x18"
+        android:paddingLeft="5dp"
+        android:drawablePadding="10dp"
+        android:text="@string/phone"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/separator3"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/mail_outline_white_18x18"
+        android:drawableStart="@drawable/mail_outline_white_18x18"
+        android:paddingLeft="5dp"
+        android:drawablePadding="10dp"
+        android:text="@string/email"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/phone"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/location_on_white_18x18"
+        android:drawableStart="@drawable/location_on_white_18x18"
+        android:paddingLeft="5dp"
+        android:drawablePadding="10dp"
+        android:text="@string/address"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/email"/>
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/query_builder_white_18x18"
+        android:drawableStart="@drawable/query_builder_white_18x18"
+        android:paddingLeft="5dp"
+        android:drawablePadding="10dp"
+        android:text="@string/schedule"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/address"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+

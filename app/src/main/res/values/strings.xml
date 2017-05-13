@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Veggie Express</string>
+    <string name="company">veggie express</string>
+    <string name="slogan"> The grocery store</string>
+    <string name="button"> Show on Maps</string>
+    <string name="phone">+1620 337 420</string>
+    <string name="email">hello@veggie-x.com</string>
+    <string name="address" >73rd Android Way, VA, Canada</string>
+    <string name="text1"> Only products from local farms and dairies, so you know they\'re fresh</string>
+    <string name="text2">Frequent seasonal specials whether you shop online or offline</string>
+    <string name="schedule">24 / 7</string>
+</resources>
